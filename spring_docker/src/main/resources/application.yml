@@ -1,2 +1,12 @@
 server:
   port: 8081
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@oracle11g:1521:XE
+    username: system
+    password: oracle
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+
+mybatis:
+  type-aliases-package: com.kcc.spring_docker.vo
+  mapper-locations: classpath:mapper/*.xml
